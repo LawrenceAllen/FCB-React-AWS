@@ -1,10 +1,17 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
 
-function HelloWorld() {
+function App() {
+
     return (
-        <h1>Hello World!</h1>
-    )
+        <div className="app">
+            <header className="app-header">
+                <h1>My Amazing ToDo-List App</h1>
+                <p>The most simple and amazing todo-list React app.</p>
+            </header>
+        </div>
+    )  
 }
 
-ReactDOM.render(<HelloWorld></HelloWorld>, document.getElementById("root"))
+ReactDOM.render(<App/>, document.getElementById("root"))
