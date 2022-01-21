@@ -2,19 +2,25 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
 
+function Task(props) {
+
+    return (
+        <li className="tasks-item">{props.taskName}</li>
+    )
+}
+
 function TasksList() {
+
     return (
         <ul>
-            <li className="tasks-item">Sleep early</li>
-            <li className="tasks-item">Eat healthy meals</li>
-            <li className="tasks-item">Exercise every once in a while</li>
+            <Task taskName="Sleep Early" />
         </ul>
     )
 }
 
 function App() {
     const pStyle = {
-        "margin-bottom" : "15px"
+        "marginBottom" : "15px"
     };
 
     return (
